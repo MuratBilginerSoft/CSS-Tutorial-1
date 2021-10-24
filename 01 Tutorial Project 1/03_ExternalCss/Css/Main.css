@@ -1,0 +1,19 @@
+a{
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    
+}
+
+li{
+    display: inline;
+}
+
+h1{
+    color: blue;
+    font-size: 50px;
+    font-family: cursive;
+}
+        
+        

@@ -1,0 +1,125 @@
+/*Pseudo Element*/
+
+/* Eğer bir p etiketinin ilk satırına etkileyecek kodlar yazacaksak aşağıdaki kodlama kullanılır. */
+p::first-line{
+	font-weight: bold;
+	color: brown;
+	word-spacing: 2px; /* Kelimeler arası boşluğu ifade eder.*/
+	letter-spacing: 1px; /* Harfler arası boşluğu ifade eder. */
+}
+
+/* Bir etiketin bir sınıfına işaret ederek ilk satırına etkiyecek kodlar yazmak istersek. */
+
+p.about::first-line{
+	color:green;
+}
+
+/* Bir etiketin ilk karakterine etkiyecek kod yazmak istersek. */
+
+p::first-letter{
+	font-size: 48px;
+}
+
+/* her etiketten sonra bir değer girilmesi için kullanılır.  */
+
+p::after{
+	content: "Test";
+	display: block;
+	background-color: yellow;
+	padding: 10px;
+}
+
+/* Belirlenen her etiket öncesinde yazılacak yada yapılacak olan işlem için kullanılır.*/
+
+p::before{
+
+    content: "Test";
+	display: inline-block;
+	background-color: yellow;
+	padding: 10px;
+
+}
+
+/* Pseudo Elementleri Kullanırken ::  çift çift nokta ile tanımlama yaparken
+/* Classları kullanmak istediğimiz : tek çift nokta ile tanımlama yaparız.
+
+
+/*Pseudo Class*/
+
+ul li {
+	padding: 10px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+/* Bir etiket içinde ilk elemanı seçmek istersek.*/
+
+ul li:first-child{
+	background-color: red;
+}
+
+/* Bir kapsam içindeki son elemenı seçmek için. */
+
+ul li:last-child{
+	background-color: red;
+}
+
+
+/* Her bir çift sıradaki elemanın seçimini böyle yapabiliriz. */
+
+ul li:nth-of-type(even){
+	border: 2px solid green;
+}
+
+/* Her bir tek sıradaki elemanın seçimini böyle yapabilir.*/
+
+ul li:nth-of-type(odd){
+	border: 2px solid blue;	
+}
+
+
+
+a {
+	padding: 20px 30px;
+	text-decoration: none;
+	display: block; /* Bu özellik o alanı bir blok haline getirir ve heigth ve width değerlerini verebilmemizi sağlar.*/
+	width: 100px;
+    border:3px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    
+}
+
+a:link{
+	color: blue;
+}
+
+a:visited{
+	color:gray;
+}
+
+a:hover{
+	color:white;
+	background: blue;
+}
+
+a:active{
+	color:blue;
+	background: gold;
+}
+
+span{
+	display: none;
+	background: yellow;
+	padding: 20px;
+}
+
+div:hover span {
+	display: block;
+}
+
+
+
+

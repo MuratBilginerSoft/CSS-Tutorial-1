@@ -1,0 +1,13 @@
+#section-one {
+    color: blue;
+    background-color: aquamarine;
+    width: 70%;
+    height: 200px;
+    overflow:scroll; /* Divden taşma işlemini önlemek için kullanılır. */
+}
+
+#section-two{
+    color: brown;
+    background-color: beige;
+    width: 30%;
+}

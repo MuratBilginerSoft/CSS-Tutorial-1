@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 200px;
+            margin-right: 20px;
+            float: left;
+        }
+
+        p {
+            border: 1px solid gray;
+        }
+
+        .clear {
+            overflow: auto;
+        }
+
+        #conteiner {
+
+            background: gray;
+
+
+        }
+
+        .clearfix:after{
+
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        .box{
+            
+            width: 170px;
+            height: 170px;
+            margin: 2px;
+
+
+        }
+
+        #first {
+
+            background: red;
+            float: right;
+
+        }
+
+        #second {
+
+            background: blue;
+            float: right;
+
+        }
+
+        #third {
+
+            background: green;
+            float: right;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="conteiner" class="clearfix">
+
+        <div id="first" class="box"></div>
+
+        <div id="second" class="box"></div>
+
+        <div id="third" class="box"></div>
+
+
+    </div>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nisi cum qui assumenda molestias aspernatur
+        officia tempore dolor, vitae incidunt veniam delectus eligendi aliquam accusantium debitis quidem laboriosam
+        possimus corporis.</p>
+
+    <p>
+
+        <img src="Images/10.png">
+
+    </p>
+
+    <p class="clear">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, illum veritatis id adipisci est
+        voluptates dicta quisquam ipsum consequuntur fugit inventore perspiciatis nam magnam cum error omnis odit
+        blanditiis accusamus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, illum veritatis id
+        adipisci est voluptates dicta quisquam ipsum consequuntur fugit inventore perspiciatis nam magnam cum error
+        omnis odit blanditiis accusamus.</p>
+
+</body>
+
+</html>

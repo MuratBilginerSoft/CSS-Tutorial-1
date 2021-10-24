@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+   .box{
+       height: 120px;
+       width:120px;
+
+       padding: 20px;
+       margin: 10px;
+       text-align: center;
+   }
+
+   #first{
+
+       background-color: green;
+
+
+
+   }
+
+   #second{
+
+    background-color: blueviolet;
+    position: relative;
+    top:30px;
+
+
+
+   }
+
+   #third{
+
+    background-color: yellow;
+    position: absolute;
+
+    top:100px;
+    left:150px;
+
+   }
+
+   #fourth{
+
+      background-color: chocolate;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+
+
+   }
+
+   .mbox{
+
+      height: 30px;
+      width: 30px;
+      background-color: red;
+      margin: 0px;
+      position: absolute;
+      left: 30px;
+      top: 15px;
+
+   }
+    
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="box" id="first">
+
+        Lorem ipsum dolor sit amet.
+
+    </div>
+
+    <div class="box" id="second">
+        
+        <div class="mbox"></div>
+
+    </div>
+
+    <div class="box" id="third">
+        
+        Lorem ipsum dolor sit amet.
+
+    </div>
+
+    <div class="box" id="fourth">
+
+        Lorem ipsum dolor sit amet.
+
+    </div>
+    
+
+
+
+</body>
+</html>
+
+<!--
+
+    1. Nesnelerin Default konumu Statictir.
+
+    2. Nesnelerinin Position özelliği Relative yapılırsa bu o nesnenin 4 kenardan konumlandırılabileceği anlamına gelir. Relative ile nesne konumlandırılmaya başlandığında referans konumlama noktası olarak bulunduğu yeri alacaktır.
+
+    3. Absolute konumlandırma ise nesneyi normal akışın dışına çıkarmış olursunuz. Ve hizalama işlemi için referans noktası 0 a 0 noktasından alınacaktır.
+
+    4. Fixed özelliği verilmiş nesne sabitlenir. Ekrana
+
+    5. Sticky özelliği verilmiş bir nesne ise top değerine göre verilen değerden itibaren sabit kalacaktır.
+
+
+
+Yapısı : position: (değer)
+Aldığı Değerler :static | relative | absolute | fixed | inherit
+Başlangıç değeri: static
+Uygulanabilen elementler: tüm elementler
+Kalıtsallık: Yok
+
+Yapısı : top, right, bottom, left : (değer)
+Aldığı Değerler : (uzunluk) | (yüzde) | auto | inherit
+Başlangıç değeri: auto
+Uygulanabilen elementler: position uygulanan elementlere
+Kalıtsallık: Yok
+
+z-index
+Yapısı : z-index: (değer)
+Aldığı Değerler : (sayısal değer) | auto | inherit
+Başlangıç değeri: auto
+Uygulanabilen elementler: position uygulanan elementlere
+Kalıtsallık: Yok
+
+
+
+-->

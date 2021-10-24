@@ -1,0 +1,136 @@
+ body{
+
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        border: 1px solid red;
+        padding: 10px;
+        margin:100px;
+        display: inline-block;
+        z-index: 2;
+    }
+    
+    .box1{
+
+         position: relative;
+         left: 100px;
+         right: 20px;
+         top: 40px;
+         
+
+    }
+
+    .box2{
+
+         position: relative;
+         left: 100px;
+         right: 20px;
+         top: 0px;
+
+    }
+
+    .box3{
+
+        position:absolute;
+        left: 50px;
+        right: 25px;
+
+
+    }
+
+    .box4{
+        width: 250px;
+        height: 300px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+
+    .thumbnail{
+
+        margin: 0px;
+        padding: 0px;
+        height: 120px;
+        width: 100%;
+        position: relative;
+        left: -10px;
+        top: -10px;
+        z-index: 3;
+
+    }
+
+
+    .Header{
+        
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+        background-color: yellow;
+        border: 0px;
+        display: block;
+
+
+    }
+
+    .Main{
+
+      background-color: transparent;
+      width: 100%;
+     
+      padding: 0px;
+      margin: 0px;
+      position: static;
+
+      top: 20px;
+      left: 0px;
+
+    }
+
+
+
+    <div class="Header"></div>
+
+
+    <div class="Main">
+
+        <div class="box1">
+
+        </div>
+                
+        <div class="box2"> 
+                
+        </div>
+                
+        <div class="box3">
+                
+                
+        </div>
+            
+            
+                
+        <div class="box4"> 
+                
+            <img src="94.jpg" class="thumbnail">
+                
+            <br>
+                
+                
+            <p>Tel : 0 554 658 72 50</p>
+                
+            <p> Adı : Murat Bilginer</p>
+                
+                
+        </div>
+    
+           
+    </div>

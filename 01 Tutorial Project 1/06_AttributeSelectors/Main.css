@@ -1,0 +1,69 @@
+p[title]{
+	border: 1px solid gray;
+	padding: 5px;	
+}
+
+p[title="third paragraph"]{
+	background-color: gold;
+}
+
+p[title~="forth"]{
+	background-color: red;
+}
+
+a[href^="https"]{
+	color:red;
+}
+
+a[href$="com"]{
+	color: aqua;
+}
+
+a[href="https://www.example.net"][target="_blank"]{
+	color: yellow;
+}
+
+input[type="text"]{
+	display: block;
+	width: 150px;
+	background-color: red;
+}
+
+
+input[type="button"]{
+	background: #4CAF50;
+	color: #FFFFFF;
+	padding: 8px 16px;
+}
+
+/* 
+1. Bir etiketin özelliğine göre seçerek kod yazabiliriz. Örneğin p etiketinin
+title özelliğine göre seçebilir. bunun için p[title]{} yazmamız yeterlidir.
+2. Sadece etiketin özelliğini işaret eder bırakırsak bu bütün o etikete ait o
+özelliği barındıran tüm içeriği kapsar.
+3. Belirli bir title ismine göre bir isim vermek istersek eğer o zaman title a
+verilen o ismide belirtmemiz gerekir. p[title="third paragraph"]{
+	background-color: gold;
+}  gibi.
+4. Belirlenen özellik içinde yaklaşık olarak geçen bir değeri içinde barındıran
+bir etikete işaret edeceksek. p[title~="forth"]{
+	background-color: red;
+} yapılmalıdır.
+
+5. Başlangıcında olmasını istediğimiz bir değere göre işaretlemek istersek
+a[href^="https"]{
+	color:red;
+}
+6. Sonunda olması istenen bir değere göre işaretlemek istersek 
+a[href$="com"]{
+	color: aqua;
+} bunu kullanırız.
+
+7. Eğer bir etiketin iki özelliğine göre bir durum belirtmek istiyorsak tanımlaması
+a[href="https://www.example.net"][target="_blank"]{
+	color: yellow;
+} bu şekilde olmalıdır.
+
+
+
+*/

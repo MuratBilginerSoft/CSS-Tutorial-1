@@ -1,0 +1,10 @@
+h1{
+    color: blue;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+li{
+    text-decoration: line-through;
+    list-style-type: none;
+}
